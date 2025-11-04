@@ -64,15 +64,44 @@
                 <div class="Project1-img">
                     <img src="SunnySideUpLogo.jpg" alt="">
                 </div>
-                <p>
-                    Sunny Side Up is an exploration and platforming game that sees you play as an ordinary egg in someone's fridge. Try to escape from the looming fate of becoming their breakfast, and don't crack under the pressure.
+                <p><div class="project-details">
+                    Sunny Side Up is an exploration and platforming game that sees you play as an ordinary egg in someone's fridge. 
+                    Try to escape from the looming fate of becoming their breakfast, and don't crack under the pressure.
+                    </div>
                 </p>
-                <p>
+                <p><br>
+                   <div class="project-details">
+    Size of Team: 3<br>
+    Engine: Unity<br>
+    Language: C#<br>
+    Platform: PC<br>
+    Role: Lead Engineer <br>
+    <br>
+    <strong>Notable contributions</strong><br>
+    Player State Machine<br>
+    Lobby UI and UI engineer<br>
+    Implemented networking using the mirror networking package and steam API<br>
+    <br>
+    <strong>Issues and challenges</strong><br>
+    This was my first time working with networking, and initially, it took a lot of trial and error to create and join lobbies. 
+    The networking solution for this project uses Steam's peer-to-peer connection, as it offers the convenience and familiarity of most PC players.<br><br>
+
+    The physics of the player have gone through many iterations. 
+    As a team, we wanted the players' movement to feel weighty but still give the sensation of rolling.<br><br>
+
+    The player uses a state machine to handle all movements and respawning.<br><br>
+
+    <strong>Things I would change</strong><br>
+    The physics for the player is not kinematic, which doesn’t allow for collision and rebounding between players.
+</div>
+
+                </p>
+                <p><div class="project-details">
                     <a href="https://aol7248.itch.io/sunny-side-up">Sunny Side Up itch.io</a>
                 </p>
                 <p>
                     <a href="https://github.com/OlearyA/Egg6">Sunny Side Up github</a>
-                </p>
+                </p></div>
             </div>
             </div>
         </div> 
@@ -80,10 +109,36 @@
             <div class="Project2-content">
                 <h1>
                     Too Many Cooks
-                </h1>
-            </div>
-            <div class="Project2-img">
-                <img scr="SunnySideUpLogo.pdf" alt="">
+                </h1><br>
+                <img src="TooManyCooks.gif" alt="">
+                <p><div class="project-details">
+                    Size of Team: 3<br>
+Engine: Unity<br>
+Language: C#<br>
+Platform: VR<br>
+Role: Lead Engineer<br><br>
+<strong>Notable contributions</strong><br>
+AI assistant Cook<br>
+Object storing system<br>
+Stove system<br><br>
+<strong>Issues and challenges</strong><br>
+
+Initially, I was unfamiliar with developing in the VR environment.  As I reviewed online resources, I discovered an XR simulator that 
+significantly accelerated the speed at which I could test new ideas. I also played VR games to understand how developers let players 
+interact with their environment.<br>
+For this project, the Idea was that you were in a busy kitchen, and to give that feeling, I made an AI Chef. 
+I have worked with state machines before and found that AI generally follows the same structure. 
+I implemented a G.O.A.P. or Goal-Oriented Action Planning for the structure. This AI works by setting beliefs, such as 
+Boolean checks on functions, to determine where something is or whether it is being held. Then you set your goals that you want the 
+AI to do, for example, keep the belief “MayhemSatisfied” true with a high priority. Then you create actions for the AI to use to 
+achieve those goals. The actions have preconditions and beliefs that should be true at the end of the action. The action “ Turn on 
+the stove” will require the AI to be in range of a stove and will satisfy the belief “MayhemSatisfied”. With these 3 parts, the AI 
+can make its own plan based on the information it can get from its sensors and make its own list of actions to do to achieve and 
+maintain the goals given to it.
+
+
+                </p><br>
+                <a href="https://github.com/AndrewOL1/unityVrtest"> Too Many Cooks github</a></div><br>
             </div>
         </div>
         <div class="Project3" style="text-align: center;">  
@@ -93,8 +148,25 @@
             <div class="Project3-content">
                 <h1>
                     Ribbit Rush
-                </h1>
-            </div>
+                </h1><br>
+                <img src="RibbitRush.gif" alt=""style="height: 600px;">
+                <p><div class="project-details">
+Size of Team: 5<br>
+Engine: Unity<br>
+Language: C#<br>
+Platform: Mobile<br>
+Role: Lead Engineer<br><br>
+	<strong>Notable contributions</strong><br>
+	Gravity/rotation<br>
+	Platform Manager<br>
+	Building to ISO<br><br>
+
+<strong>Issues and challenges</strong><br>
+This project was my first time developing for mobile. While the team developed the project using Unity Remote 5 the hardest part of the project was getting it to build on an Iphone. I ended up having to use unity services to rent a mac pc to make the build. Then I needed to make an apple developer license to upload the build so you could download the alpha on your iphone. At this time, I no longer have the Apple Developer account active, so the build is not available as an app on iso.
+
+                </p><br>
+                <a href="https://github.com/OlearyA/Egg6"> Ribbit Rush github</a>
+            </div></div>
         </div> 
 
     </section>
