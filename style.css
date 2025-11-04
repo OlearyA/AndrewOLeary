@@ -169,7 +169,21 @@ span{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: #080808;  
+    background-color: #080808;
+}
+.project .project3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #080808;
+}
+.project-details {
+    font-size: 18px;     
+    line-height: 1.6;    
+    color: #808080;         
+    text-align: left;   
+    margin-top: 10px;
 }
 .project .project1 .box{
     background: transparent;
@@ -188,7 +202,6 @@ span{
     line-height: 4;
     border-bottom: 5rem;
 }
-
 .contact .box{
     background: transparent;
     padding: 20px;
