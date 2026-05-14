@@ -13,7 +13,7 @@
      <nav>
         <a href="#" class="active">Home</a>
         <a href="#resume">Resume</a>
-        <a href="#Project">Projects</a>
+        <a href="#project">Projects</a>
         <a href="#contact">Contact</a>
 
      </nav>
@@ -52,109 +52,138 @@
 
     </section>
     <!-- Projects start-->
-    <section class="Project"id="Project">
-        <div class="Project1">  
-            <div class="Project1-content" style="text-align: center;">
-                <h1>
-                    Sunny Side Up 
-                </h1>
+    <section class="project"id="Project">
+        <!-- CaliGO!-->
+        <div class="project0">
+
+            <div class="Project0" style="text-align: center;">
+            <h1>CaliGo!</h1>
+            <div class="box"></div>
+            </div>
+
+            <iframe
+                width="100%"
+                height="600"
+                src="https://www.youtube.com/embed/3HOj4a7UiqM"
+                 title="CaliGO! Official Game Trailer"
+                 frameborder="0"
+                 allowfullscreen>
+            </iframe>
+
+            <div class="project-details">
+                CaliGO! Is a casual multiplayer game revolving around the company 'CaliGO!' being hired to rein in chaotic cats.
+                Play with up to 7 friends and work on behalf of 'CaliGO!' or cause mayhem wrecking the house as a cat.
+            </div>
+            <div class="project-tags">
+                Size of Team: 8 | Engine: Unity | Language: C# | Platform: PC | Role: Lead engineer, Network engineer, Steam Production, UI/UX, System engineer, Technical Animator 
+            </div>
+            <div class="project-tags">
+                <a href="url">https://store.steampowered.com/app/4429030/CaliGO/</a>
+            </div>
+
+        </div>
+
+        <div class="project1">
+            
+            <div class="project1-content" style="text-align: center;">
+                <h1>Sunny Side Up</h1>
+
                 <div class="box"></div>
-            <div>
-                <div class="Project1-img">
-                    <img src="SunnySideUpLogo.jpg" alt="">
+
+                <div class="project1-img">
+                    <img src="SunnySideUpLogo.jpg" alt="Sunny Side Up Logo">
                 </div>
-                <p><div class="project-details">
+                <div class="project-details">
                     Sunny Side Up is an exploration and platforming game that sees you play as an ordinary egg in someone's fridge. 
                     Try to escape from the looming fate of becoming their breakfast, and don't crack under the pressure.
-                    </div>
-                </p>
-                <p><div class="project-tags">
+                </div>
+
+                <div class="project-tags">
                     Size of Team: 3 | Engine: Unity | Language: C# | Platform: PC | Role: Lead Engineer<br><br>
-                </p></div>
-                <p><br>
-                   <div class="project-details">
-    <strong>Key Responsibilities</strong><br>
-    <ul>
-    <li>Designed and implemented a player state machine to support rolling, jumping, and respawning</li>
-    <li>Designed and implemented a Lobby System to join and host servers</li>
-    <li>Developed networking using the Mirror package + Steam P2P API, enabling lobby creation/joining and synchronized multiplayer state across clients</li>
-  </ul>
-  <br>
-    <strong>Technical Implementation</strong><br>
-    <ul>
-    <li>Built a modular state machine: IdleState -> LocomotionState -> RespawningState</li>
-    <li>Integrated Steamworks.NET to establish peer sessions and used Mirror’s NetworkBehaviour methods to broadcast player transforms and RPC calls</li>
-  </ul>
-</div>
+                </div>
 
-                </p>
-                <p><div class="project-details">
+                <div class="project-details">
+                    <strong>Key Responsibilities</strong>
+                    <ul>
+                        <li>Designed and implemented a player state machine to support rolling, jumping, and respawning</li>
+                        <li>Designed and implemented a Lobby System to join and host servers</li>
+                        <li>Developed networking using the Mirror package + Steam P2P API, enabling lobby creation/joining and synchronized multiplayer state across clients</li>
+                    </ul>
+  
+                    <strong>Technical Implementation</strong>
+                    <ul>
+                        <li>Built a modular state machine: IdleState -> LocomotionState -> RespawningState</li>
+                        <li>Integrated Steamworks.NET to establish peer sessions and used Mirror’s NetworkBehaviour methods to broadcast player transforms and RPC calls</li>
+                    </ul>
+                </div>
+                <div class="project-details">
                     <a href="https://aol7248.itch.io/sunny-side-up" target="_blank">Sunny Side Up itch.io</a>
-                </p>
-                <p>
+                    <br><br>
                     <a href="https://github.com/OlearyA/Egg6" target="_blank">Sunny Side Up github</a>
-                </p></div>
-            </div>
-            </div>
-        </div> 
-        <div class="Project2" style="text-align: center;">  
-            <div class="Project2-content">
-                <h1>
-                    Too Many Cooks
-                </h1><br>
-                <img src="TooManyCooks.gif" alt="">
-                <p><div class="project-tags">
-                    Size of Team: 3 | Engine: Unity | Language: C# | Platform: VR | Role: Lead Engineer<br><br>
-                </p></div>
-                <p><div class="project-details">
-<strong>Key Responsibilities</strong><br>
-<ul>
-    <li>Designed and implemented an AI Assistant Chef using Goal-Oriented Action Planning (GOAP)</li>
-    <li>Developed interactive kitchen systems, including object storage, stove operation, and utensil handling</li>
-  </ul>
-  <br>
-<strong>Technical Implementation</strong><br>
-<ul>
-    <li>Created a GOAP-based AI framework allowing agents to dynamically plan actions based on environment state and goals</li>
-    <li>Defined beliefs, goals, and actions: e.g., the “TurnOnStove” action requires proximity to a stove and fulfills the “MayhemSatisfied” belief</li>
-    <li>Integrated Unity’s XR Interaction Toolkit and a desktop simulator to accelerate testing without a headset</li>
-    <li>Implemented object state tracking and storage systems for realistic environmental interaction in VR</li>
-  </ul>
-
-                </p><br>
-                <a href="https://github.com/AndrewOL1/unityVrtest" target="_blank"> Too Many Cooks github</a></div><br>
+                </div>
             </div>
         </div>
-        <div class="Project3" style="text-align: center;">  
-            <div class="Project3-img">
-                <img scr="SunnySideUpLogo.pdf" alt="">
-            </div>
-            <div class="Project3-content">
-                <h1>
-                    Ribbit Rush
-                </h1><br>
-                <img src="RibbitRush.gif" alt=""style="height: 600px;">
-                <p><div class="project-tags">
-                    Size of Team: 5 | Engine: Unity | Language: C# | Platform: Mobile | Role: Lead Engineer<br><br>
-                </p></div>
-                <p><div class="project-details">
-	<strong>Key Responsibilities</strong><br>
-	<ul>
-    <li>Developed core gameplay systems, including player gravity and rotation mechanics</li>
-    <li>Implemented a platform spawn manager to control obstacle spawning and level pacing</li>
-    <li>Managed mobile build pipeline and deployment for iOS devices</li>
-  </ul><br>
+        <!-- Too Many Cooks -->
+        <div class="project2" style="text-align: center;">
 
-<strong>Technical Implementation</strong><br>
-<ul>
-    <li>Made custom kinematic physics for the player to handle rotations and changes in gravity relative to the surface the player is on</li>
-    <li>The platform spawn manager is a singleton that holds all spawn locations and calculates the spawn chance based on the duration of the run</li>
-    <li>In retrospect, I should have also used object pooling to handle the instantiation of platforms, thereby optimizing performance</li>
-    <li>Configured Unity Cloud Build (Mac environment) for iOS deployment. Created provisioning profiles and managed Apple Developer account for alpha distribution</li>
-  </ul>
-                </p><br>
+            <div class="project2-content">
+                <h1>Too Many Cooks</h1>
+                <div class="box"></div>
+                <img src="TooManyCooks.gif" alt="Too Many Cooks Gameplay">
+
+                <div class="project-tags">
+                    Size of Team: 3 | Engine: Unity | Language: C# | Platform: VR | Role: Lead Engineer
+                </div>
+
+                    <div class="project-details">
+                        <strong>Key Responsibilities</strong><br>
+                            <ul>
+                                <li>Designed and implemented an AI Assistant Chef using Goal-Oriented Action Planning (GOAP)</li>
+                                <li>Developed interactive kitchen systems, including object storage, stove operation, and utensil handling</li>
+                            </ul>
+                        <strong>Technical Implementation</strong><br>
+                            <ul>
+                                <li>Created a GOAP-based AI framework allowing agents to dynamically plan actions based on environment state and goals</li>
+                                <li>Defined beliefs, goals, and actions: e.g., the “TurnOnStove” action requires proximity to a stove and fulfills the “MayhemSatisfied” belief</li>
+                                <li>Integrated Unity’s XR Interaction Toolkit and a desktop simulator to accelerate testing without a headset</li>
+                                <li>Implemented object state tracking and storage systems for realistic environmental interaction in VR</li>
+                            </ul>
+                    </div>
+            
+                <a href="https://github.com/AndrewOL1/unityVrtest" target="_blank"> 
+                    Too Many Cooks github
+                </a>
+            </div>
+        </div>
+        <!-- Ribbit Rush -->
+        <div class="project3" style="text-align: center;">  
+            
+            <div class="project3-content">
+                <h1>Ribbit Rush</h1>
+                <div class="box"></div>
+
+                <img src="RibbitRush.gif" alt=""style="height: 600px;">
+                <div class="project-tags">
+                    Size of Team: 5 | Engine: Unity | Language: C# | Platform: Mobile | Role: Lead Engineer<br><br>
+                </div>
+
+                <div class="project-details">
+	                <strong>Key Responsibilities</strong><br>
+	                <ul>
+                        <li>Developed core gameplay systems, including player gravity and rotation mechanics</li>
+                        <li>Implemented a platform spawn manager to control obstacle spawning and level pacing</li>
+                        <li>Managed mobile build pipeline and deployment for iOS devices</li>
+                    </ul>
+
+                    <strong>Technical Implementation</strong><br>
+                    <ul>
+                        <li>Made custom kinematic physics for the player to handle rotations and changes in gravity relative to the surface the player is on</li>
+                        <li>The platform spawn manager is a singleton that holds all spawn locations and calculates the spawn chance based on the duration of the run</li>
+                        <li>In retrospect, I should have also used object pooling to handle the instantiation of platforms, thereby optimizing performance</li>
+                        <li>Configured Unity Cloud Build (Mac environment) for iOS deployment. Created provisioning profiles and managed Apple Developer account for alpha distribution</li>
+                    </ul>
                 <a href="https://github.com/Kdog9001/Run_Frog" target="_blank"> Ribbit Rush github</a>
-            </div></div>
+            </div>
         </div> 
 
     </section>
@@ -174,6 +203,5 @@
         </div>
 
     </section>
-</div>
 </body>
 </html>
