@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eg">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,18 @@
     <header>
         <a href="#" class="logo">Andrew O'Leary</a>
      <nav>
-        <a href="#" class="active">Home</a>
+        <a href="#home">Home</a>
         <a href="#resume">Resume</a>
-        <a href="#project">Projects</a>
+        <div class="dropdown">
+            <a href="#project">Projects</a>
+
+            <div class="dropdown-content">
+                <a href="#caligo">CaliGO!</a>
+                <a href="#sunnysideup">Sunny Side Up</a>
+                <a href="#toomanycooks">Too Many Cooks</a>
+                <a href="#ribbitrush">Ribbit Rush</a>
+        </div>
+    </div>
         <a href="#contact">Contact</a>
 
      </nav>
@@ -27,8 +36,10 @@
             <h1>
                 Hi, my name is Andrew O'Leary.
             </h1>
-            <p>I am a student at Fitchburg State University studying in the Game Design major, working towards a Computer Science minor. 
+            <p>I am a graduating student at Fitchburg State University with a the Game Design major, an a Computer Science minor. 
                 I am an engineer that primarily works in C# and Unity, but I have proficiencies in Unreal, blueprints, C, C++, Python, Java, HTML, and CSS. 
+                I am always eager to learn, whether it's new game engines, bugs that arise, or new tools that come out.
+                 Most recently I have been researching and practicing using networking tools in unity.
             </p>
             </div>
         </div>
@@ -41,25 +52,24 @@
             </h1>
         <div class="box"></div>
         <div class="resume-img">
-            <img src="AOResume.jpg" alt="">
+            <img src="AOResumeGrad.jpg" alt="">
         </div>
         <div class="box"></div>
         <p style="text-align: center;">
-            <a href="AOResume.pdf" download > download resume
-            </a>
+            <a href="AOResumeGrad.pdf" download>Download resume</a>
         </p>   
         </div>
 
     </section>
     <!-- Projects start-->
-    <section class="project"id="Project">
+    <section class="project"id="project">
         <!-- CaliGO!-->
-        <div class="project0">
+        <div class="project0" id="caligo">
 
             <div class="Project0" style="text-align: center;">
             <h1>CaliGo!</h1>
-            <div class="box"></div>
             </div>
+            <div class="box"></div>
 
             <iframe
                 width="100%"
@@ -77,13 +87,24 @@
             <div class="project-tags">
                 Size of Team: 8 | Engine: Unity | Language: C# | Platform: PC | Role: Lead engineer, Network engineer, Steam Production, UI/UX, System engineer, Technical Animator 
             </div>
+            <div class="project-details">
+                    <strong>Key Responsibilities</strong>
+                    <ul>
+                        <li>Outlined and created the base line for the player state machine</li>
+                        <li>Handled the Game Manager which involved registering player information, syncing game scenes and states, and player scores/ results</li>
+                        <li>Designed and implemented a Lobby System that is intuitive and works using steam P2P connections</li>
+                        <li>Aiding other engineers in Core Networking Architectures & Protocols</li>
+                        <li>Managing the Github repository</li>
+                    </ul>
+            </div>            
             <div class="project-tags">
-                <a href="url">https://store.steampowered.com/app/4429030/CaliGO/</a>
+                <a href="https://store.steampowered.com/app/4429030/CaliGO/">Visit CaliGO! on Steam</a>
             </div>
+            <div class="box"></div>
 
         </div>
 
-        <div class="project1">
+        <div class="project1" id="sunnysideup">
             
             <div class="project1-content" style="text-align: center;">
                 <h1>Sunny Side Up</h1>
@@ -116,7 +137,7 @@
                         <li>Integrated Steamworks.NET to establish peer sessions and used Mirror’s NetworkBehaviour methods to broadcast player transforms and RPC calls</li>
                     </ul>
                 </div>
-                <div class="project-details">
+                <div class="project-tags">
                     <a href="https://aol7248.itch.io/sunny-side-up" target="_blank">Sunny Side Up itch.io</a>
                     <br><br>
                     <a href="https://github.com/OlearyA/Egg6" target="_blank">Sunny Side Up github</a>
@@ -124,7 +145,7 @@
             </div>
         </div>
         <!-- Too Many Cooks -->
-        <div class="project2" style="text-align: center;">
+        <div class="project2" style="text-align: center;" id="toomanycooks">
 
             <div class="project2-content">
                 <h1>Too Many Cooks</h1>
@@ -149,14 +170,15 @@
                                 <li>Implemented object state tracking and storage systems for realistic environmental interaction in VR</li>
                             </ul>
                     </div>
-            
-                <a href="https://github.com/AndrewOL1/unityVrtest" target="_blank"> 
-                    Too Many Cooks github
+                <div class="project-tags">
+                    <a href="https://github.com/AndrewOL1/unityVrtest" target="_blank"> 
+                        Too Many Cooks github
                 </a>
+                </div>
             </div>
         </div>
         <!-- Ribbit Rush -->
-        <div class="project3" style="text-align: center;">  
+        <div class="project3" style="text-align: center;" id="ribbitrush">  
             
             <div class="project3-content">
                 <h1>Ribbit Rush</h1>
@@ -182,7 +204,9 @@
                         <li>In retrospect, I should have also used object pooling to handle the instantiation of platforms, thereby optimizing performance</li>
                         <li>Configured Unity Cloud Build (Mac environment) for iOS deployment. Created provisioning profiles and managed Apple Developer account for alpha distribution</li>
                     </ul>
-                <a href="https://github.com/Kdog9001/Run_Frog" target="_blank"> Ribbit Rush github</a>
+                <div class="project-tags">   
+                    <a href="https://github.com/Kdog9001/Run_Frog" target="_blank"> Ribbit Rush github</a>
+                </div>
             </div>
         </div> 
 
@@ -203,5 +227,30 @@
         </div>
 
     </section>
+    <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (scrollY >= sectionTop - 200) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+
+            if (link.getAttribute("href") === `#${current}`) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
 </body>
 </html>
