@@ -137,15 +137,11 @@ span{
     font-size: 3rem;
 }
 .resume .resume-content h1{
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 1.3;
     border-bottom: 5rem;
-}
-.resume .resume-content h3{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
+    margin-bottom: 15px;
 }
 .resume-img img{
     border-left: 5rem;
@@ -175,10 +171,26 @@ span{
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    margin-bottom: 200px;
+
+}
+#caligo h1 {
+    color: white;
+    font-size: 4rem;
+}
+#ribbitrush h1 {
+    color: white;
+    font-size: 4rem;
+}
+#sunnysideup h1 {
+    color: white;
+    font-size: 4rem;
+}
+#toomanycooks h1 {
+    color: white;
+    font-size: 4rem;
 }
 .project-tags{
-    font-size: 18px;     
+    font-size: 2rem;     
     line-height: 1.6;    
     color: #808080;         
     text-align: center;   
@@ -211,6 +223,13 @@ span{
     background: transparent;
     padding: 20px;
     margin-bottom: 20px; 
+}
+.project-links{
+    font-size: 3rem;     
+    line-height: 1.6;    
+    color: #808080;         
+    text-align: center;   
+    margin-top: 10px;
 }
 
 .contact{
